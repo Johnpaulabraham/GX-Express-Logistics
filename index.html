@@ -27,7 +27,7 @@
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"></script>
+      crossorigin="anonymous" defer></script>
     <title>
       GX Express - Africa's Leading Logistics Company | Express Delivery
     </title>
@@ -81,9 +81,9 @@
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="https://giglogistics.com/shipment-option">Ship Transport</a></li>
                 <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">Air Transport</a></li>
+                <li><a class="dropdown-item" href="#air">Air Transport</a></li>
                 <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">Land Transport</a></li>
+                <li><a class="dropdown-item" href="#car">Land Transport</a></li>
               </ul>
             </li>
             <li class="nav-item">
@@ -105,51 +105,74 @@
         </div>
       </div>
     </nav>
+    <!-- Navigation Section Ended -->
+
 
 
     <!-- Hero Section -->
-    <div class="position-relative"
-      style="
-        background-image: linear-gradient(
-            to bottom,
-            rgb(0, 0, 0, 0.54),
-            rgb(0, 0, 0, 0.54)
-          ),
-          url(./images/Hero.jpg);
-        width: 100%;
-        height: 85vh;
-        background-position: 50% 80%;
-        background-repeat: no-repeat;
-        background-size: cover;">
+    <div class="position-relative">
 
-<!-- div to be included here -->
-         
-        
-    </div>
-
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./images/Hero.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/3.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/4.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/4.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/5.jpg" class="d-block w-100" alt="...">
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>         
+      </div>
+      <!-- Hero Section ended -->
 
 
     <!-- Call to Action Section -->
-        <div class="card text-center bg-body-tertiary">
-            <div class="card-body mx-5">
-              <h5 class="card-title text-dark fw-bold fs-1">Delivering your World, On Time, Every Time</h5>
+        <div class="card text-center bg-body-tertiary mt-5">
+            <div class="card-body p-5 mt-5 mb-5">
+              <h1 class="card-title text-dark fw-bold fs-1">Delivering your World, On Time, Every Time</h1>
               <p class="card-text">Transport quality and excellence to enhance your business</p>
               <a href="#" class="btn btn-primary text-light fw-bold fs-2" >BOOK NOW</a>
             </div>
         </div>
+    <!-- Call to Action Section Ended -->
 
 
 
     <!--  Feature Section -->
     <div class="container px-4 py-5" id="featured-3">
-        <h2 class="pb-2 border-bottom text-center text-uppercase fw-bold">Seamless services delivery medium</h2>
+        <h3 class="pb-2 border-bottom text-center text-uppercase fw-bold">Seamless service delivery medium</h3>
         <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
 
           <div class="feature col">
             <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
                <img src="./images/airplane.jpg" alt="" width="100%">
             </div>
-            <h3 class="fs-2 text-body-emphasis">Air Shipping</h3>
+            <h3 class="fs-2 text-body-emphasis" id="air">Air Shipping</h3>
             <p>Air transport is the activity that allows the transfer of people, merchandise and mail in aircraft. Therefore, we are talking about the type of transport that travels by air and is present in airports.</p>
             <button type="button" class="btn btn-primary">Book a Flight</button>
           </div>
@@ -194,18 +217,51 @@
             <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
                 <img src="./images/car.jpg" alt="" width="100%">
             </div>
-            <h3 class="fs-2 text-body-emphasis">Car Shipping</h3>
+            <h3 class="fs-2 text-body-emphasis" id="car">Car Shipping</h3>
             <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
             <button type="button" class="btn btn-primary">Car Shipping</button>
           </div>
 
         </div>
     </div>
+    <!-- Feature Section Ended -->
+
+
+    <!-- Testimonials Section -->
+    <div class="container p-5 mt-1 mb-5">
+      <h3 class="pb-2 border-bottom text-center text-uppercase fw-bold">Testimonials</h3>
+      <div class="row">
+
+          <div class="col-lg-4">
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+            <h2 class="fw-normal">Joel Victor</h2>
+            <p>Ground Shipping</p>
+            <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+          </div>
+
+          <div class="col-lg-4">
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+            <h2 class="fw-normal">Peterson Jack</h2>
+            <p>Air Shipping</p>
+            <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+          </div>
+
+          <div class="col-lg-4">
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+            <h2 class="fw-normal">Liman Yusuf</h2>
+            <p>Sea Shipping</p>
+            <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+          </div>
+      </div>
+    </div>
+
+
+    <!-- Testimonials Section Ended -->
 
 
 
     <!-- Footer Section -->
-    <div class="container" >
+    <div class="container border-top border-bottom" >
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
           <div class="col-md-4 d-flex align-items-center">
             <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
